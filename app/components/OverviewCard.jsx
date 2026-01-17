@@ -1,19 +1,34 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function OverViewCard(){
     return(
         <View style={styles.container}>
             <View style={styles.textContainer}>
-                <Text style={styles.text}>Monthly Bills</Text>
-                 
-            </View>
-            <View  style={styles.ButtonContainer}>
-                    <Text style={styles.text}>Daily</Text>
-                    <Text style={styles.text}>Weekly</Text>
-                    <Text style={styles.text}>Monthly</Text>
+                <Text style={styles.header}>Monthly Bills</Text>
+                <View  style={styles.ButtonContainer}>
+                    <Pressable> 
+                        <Text style={styles.text}>Daily</Text>
+                    </Pressable>
                     
+                    <Pressable>
+                        <Text style={styles.text}>Weekly</Text>
+                    </Pressable>
+                     
+                    <Pressable>
+                        <Text style={styles.text}>Monthly</Text>
+                    </Pressable>
+                    
+                </View>
             </View>
 
+            <View style={styles.statsContainer}>
+                <Text style={styles.header2}>$ 1,532</Text>
+
+                <Pressable style={styles.button}>
+                    <Text style={styles.text}>View your stats</Text>
+                </Pressable>
+
+            </View>
           
 
         </View>
@@ -36,12 +51,40 @@ const styles = StyleSheet.create({
     ButtonContainer:{
         flexDirection:"row",
         gap:10,
-        justifyContent:"right"
+        marginLeft:"auto",
     },
+    header:{
+        color:"white",
+        fontSize:12,
+        // fontWeight:1
+    },  
     text:{
-        color:"white"
-    }
+        color:"white",
+        fontSize:10
+        
+    },
+    statsContainer:{
+        flexDirection:"row",
+        margin:20,
+   
 
+    },
+    header2:{
+        color:"white",
+        fontSize:20,
+        fontWeight:"bold",
+    },
+
+    button:{
+        borderWidth:1,
+        borderRadius:20,
+        borderColor:"grey",
+        color:"white",
+        marginLeft:"auto",
+        height:"fit-content",
+        padding:8,
+        width:"fit-content",
+    },
 
     
 })

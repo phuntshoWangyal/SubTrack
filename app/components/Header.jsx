@@ -1,5 +1,6 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 
+
 export default function HeaderBar(){
     return(
         <View style={styles.screen}>
@@ -27,8 +28,6 @@ export default function HeaderBar(){
 
 const styles = StyleSheet.create({
     screen: {
-        flex:1,
-        backgroundColor:"0F1117",
         marginTop:20,
     },
     header: {
@@ -36,13 +35,14 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems:"center",
         paddingHorizontal: 18,
-        paddingTop: 50,
         paddingBottom:12,
+
     },
     left: {
         flexDirection:"row",
         alignItems:"center",
         gap:10,
+        marginLeft:2
     },
     right: {
         flexDirection:"row",
