@@ -4,8 +4,8 @@ import { Image, Pressable, StyleSheet, View } from "react-native";
 export default function AddSubscription() {
     return(
         <View >
-            <Pressable style={styles.container} onPress={() => router.push("/components/AddPage")}>
-                <Image source={require("../assets/images/add_icon.png") } style={styles.avatar}>
+            <Pressable style={styles.container} onPress={() => router.push("/AddPage")}>
+                <Image source={require("../../../assets/images/add_icon.png") } style={styles.avatar}>
 
                 </Image>
             </Pressable>

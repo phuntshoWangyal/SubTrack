@@ -1,12 +1,12 @@
 import { FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { subscription } from "../models/subscription";
-import AddSubscription from "./AddSubscription";
-import HeaderBar from "./components/Header";
-import OverViewCard from "./components/OverviewCard";
-import SegmentedControl from "./components/SegmentedControl";
-import SubscriptionCard from "./components/SubscriptionCard";
-import SubscriptionItem from "./components/SubscriptionItem";
+import HeaderBar from "./components/headers/Header";
+import AddSubscription from "./components/subscriptions/AddSubscription";
+import OverViewCard from "./components/subscriptions/OverviewCard";
+import SegmentedControl from "./components/subscriptions/SegmentedControl";
+import SubscriptionCard from "./components/subscriptions/SubscriptionCard";
+import SubscriptionItem from "./components/subscriptions/SubscriptionItem";
 
 export default function Index() {
   return (

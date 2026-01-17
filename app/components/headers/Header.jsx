@@ -7,7 +7,7 @@ export default function HeaderBar(){
             <View style={styles.header}>
                 
                 <View style={styles.left}>
-                    <Image source={require("../../assets/images/avatar_icon.png")} style={styles.avatar}></Image>
+                    <Image source={require("../../../assets/images/avatar_icon.png")} style={styles.avatar}></Image>
                     <View >
                         <Text style={styles.greeting}>Hey 👋</Text>
                         <Text style={styles.name}>Phuntsho</Text>
@@ -15,9 +15,9 @@ export default function HeaderBar(){
                    
                 </View>
                 <View style={styles.right}>
-                    <Image source={require("../../assets/images/history_icon.png")} style={styles.avatar}></Image>
-                    <Image source={require("../../assets/images/notification_icon.png")} style={styles.avatar}></Image>
-                    <Image source={require("../../assets/images/settings_icon1.png")} style={styles.avatar}></Image>
+                    <Image source={require("../../../assets/images/history_icon.png")} style={styles.avatar}></Image>
+                    <Image source={require("../../../assets/images/notification_icon.png")} style={styles.avatar}></Image>
+                    <Image source={require("../../../assets/images/settings_icon1.png")} style={styles.avatar}></Image>
             </View>
             </View>
 
