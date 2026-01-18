@@ -1,9 +1,12 @@
-import { Text, View } from "react-native";
-
+import { View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import CreateSubHeader from "./components/layout/createSubHeader";
 export default function AddPage() {
   return (
-    <View>
-      <Text>Add Subscription Page</Text>
-    </View>
+    <SafeAreaView style={{flex:1}}>
+      <View>
+        <CreateSubHeader></CreateSubHeader>
+      </View>
+    </SafeAreaView>
   );
 }

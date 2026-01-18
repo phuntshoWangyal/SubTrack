@@ -5,7 +5,7 @@ export default function AddSubscription() {
     return(
         <View >
             <Pressable style={styles.container} onPress={() => router.push("/AddPage")}>
-                <Image source={require("../../../assets/images/add_icon.png") } style={styles.avatar}>
+                <Image source={require("../../../assets/images/add_icon2.png") } style={styles.avatar}>
 
                 </Image>
             </Pressable>
@@ -16,12 +16,14 @@ export default function AddSubscription() {
 const styles = StyleSheet.create({
     
     container:{
-        alignItems:"center",
-        margin:20
+        // alignItems:"center",
+        // margin:20
         
     },
     avatar:{
         width:50,
-        height:50
+        height:50,
+        backgroundColor:"transparent"
+      
     }
 })
