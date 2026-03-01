@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
         flexDirection:"row",
         gap:20,
         marginStart:20,
-        marginEnd:20
+        marginEnd:20,
+        marginBottom:30
     },
     header:{
         color:"white",
